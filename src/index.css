@@ -1,0 +1,181 @@
+/* Fondo */
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("/portada.jpg");
+  background-attachment: scroll;
+  background-size: auto;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(94, 93, 93);
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  text-align: center;
+  color: rgb(94, 93, 93);
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: left;
+  color: rgb(94, 93, 93);
+}
+
+p {
+  margin-bottom: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: justify;
+  color: rgb(94, 93, 93);
+}
+
+li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: justify;
+  color: rgb(94, 93, 93);
+}
+
+a {
+  color: rgb(94, 93, 93);
+}
+
+.color-fondo {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 100px;
+  margin: 100px auto;
+  border-radius: 20px;
+  max-width: 1200px;
+}
+
+.centrar-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.centrar-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+/* ---- NAVBAR ---- */
+.menu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  background-color: #2c3e50;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu > li > a:hover {
+  background-color: #34495e;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #34495e;
+  min-width: 200px;
+  z-index: 999;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #3d566e;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* ---- QUIZ ---- */
+.correcta {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrecta {
+  color: red;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitBtn {
+  background-color: #3498db;
+  color: white;
+}
+
+#resetBtn {
+  background-color: #e74c3c;
+  color: white;
+  display: none;
+}
+
+.correct {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.incorrect {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.quiz-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
